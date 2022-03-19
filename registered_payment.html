@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Best Community Service</title>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet">		
+		<meta name="author" content="Nathan Nguyen">
+    <script type="text/javascript" src="registered_payment_script.js" defer></script>
+	</head>
+    <body>
+		<header>
+			<div class="container">
+			  <h1 id="left_title"> COMMUNITY CENTER | REGISTERED USER</h1>
+			  <nav>
+				<ul>
+				  <li><a href="registered_user_home.html">Home</a></li>
+				  <li><a href="registered_classes.html">Classes</a></li>
+				  <li><a href="registered_equipment_rental.html">Equipment Rental</a></li>
+				  <li><a href="registered_catering_service.html">Catering</a></li>
+				  <li><a href="registered_elderly_care.html">Elderly Care</a></li>
+				  <li><a href="home.html">Log Out</a></li>
+                </ul>
+			  </nav>
+			</div>
+		  </header>
+
+		  <main>
+        <div id='payment_wrapper'>
+          <form id="payment_form">
+            <h2>Payment</h2>
+            <h3 id='total_h2'>Total: </h3>  
+
+            <label for="myFirstName">First Name</label>
+            <input type="text" name="myFirstName" id="myFirstName" required>
+
+            <label for="myLastName">Last Name</label>
+            <input type="text" name="myLastName" id="myLastName" required>
+            
+            <label for="myEmail">Email Address</label>
+            <input type="text" name="myEmail" id="myEmail" required>
+
+            <label for="myCreditCard">Credit Card Number</label>
+            <input type="text" name="myCreditCard" id="myCreditCard" required>
+
+            <label for="myExpDateMonth">Expiration Date </label>
+            <select size="1" name="myExpDateMonth" id="myExpDateMonth" required>
+                <option value="1">January</option>
+                <option value='2'>February</option>
+                <option value='3'>March</option>
+                <option value='4'>April</option>
+                <option value='5'>May</option>
+                <option value='6'>June</option>
+                <option value='7'>July</option>
+                <option value='8'>August</option>
+                <option value='9'>September</option>
+                <option value='10'>October</option>
+                <option value='11'>November</option>
+                <option value='12'>December</option>
+            </select>
+            <input type="text" name="myExpDateDay" id="myExpDateDay" required>
+
+            <label for="mySecurityCode">Security Code</label>
+            <input type="text" name="mySecurityCode" id="mySecurityCode" required>
+
+            <section id="myButtons">
+                <input type="button" id="mySubmit" value="Checkout">
+            </section>
+          </form>    
+        </div>
+		  </main>
+
+	</body>
+</html>

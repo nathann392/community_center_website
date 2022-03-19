@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Best Community Service</title>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet">		
+		<meta name="author" content="Nathan Nguyen">
+		<script type="text/javascript" src="elderly_care_script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+			  <h1 id="left_title">BEST COMMUNITY SERVICE | REGISTERED USER</h1>
+			  <nav>
+				<ul>
+				  <li><a href="registered_user_home.html">Home</a></li>
+				  <li><a href="registered_classes.html">Classes</a></li>
+				  <li><a href="registered_equipment_rental.html">Equipment Rental</a></li>
+				  <li><a href="registered_catering_service.html">Catering</a></li>
+				  <li><a href="registered_elderly_care.html">Elderly Care</a></li>
+				  <li><a href="home.html">Log Out</a></li>
+                </ul>
+			  </nav>
+			</div>
+		  </header>
+
+		<main>
+            <div id='catering_service'>
+                <h1>Elderly Care</h1>
+                <h2>Select an elderly care type to purchase.</h2>
+                <form id="catering_form" method="GET" action="registered_payment.html">
+                    <table border="1" cellspacing="0" align="center">
+                        <tr>
+                            <td id='edge_title' align="center" height="50" 
+                                width="200"><br>
+                                <b>Type of Elderly Care</b></br>
+                            </td>
+                            <td id='edge_title' align="center" height="50" 
+                                width="200">
+                                <b>Description</b>
+                            </td>
+                            <td id='edge_title' align="center" height="50" 
+                                width="200">
+                                <b>Cost/Week</b>
+                            </td>
+                            <td id='edge_title' align="center" height="50" 
+                                width="200">
+                                <b>Select Type</b>
+							</td>
+							<td id='edge_title' align="center" height="50" 
+							width="200">
+								<b>Enter Number of Weeks</b>
+							</td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="85">
+                                <b>Standard</b></td>
+                            <td align="center" height="50">Nullam feugiat justo a justo consequat, at pretium arcu vestibulum.</td>
+							<td align="center" height="50">$300</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="radio" name="service_select" id="standard_select">
+                            </td>
+							<td class='quantity_block' align="center" height="50" rowspan="2">
+								<input type="text" name="weeks_quantity" id="weeks_quantity">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="85">
+                                <b>Premium</b>
+                            </td>
+                            <td align="center" height="50">Cras nisl sem, varius a bibendum tempor, bibendum eget risus.</td>
+							<td align="center" height="50">$500</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="radio" name="service_select" id="premium_select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">Total</td>
+                            <td align="center" height="50" colspan="4">
+                                <input type="hidden" name="total_block" id="total_block" value="">
+                                <p id='total_block_show'></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="button_wrapper">
+                        <input type="submit" id="pay_button" value="Checkout">
+                    </div>
+                </form>
+            </div>
+		  </main>
+
+		  <footer>
+			<p>BEST COMMUNITY SERVICE <br>Nathan Nguyen</p>
+		  </footer>
+	</body>
+</html>

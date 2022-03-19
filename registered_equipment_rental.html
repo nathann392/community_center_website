@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Best Community Service</title>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet">		
+		<meta name="author" content="Nathan Nguyen">
+		<script type="text/javascript" src="equipment_rental_script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+			  <h1 id="left_title">BEST COMMUNITY SERVICE | REGISTERED USER</h1>
+			  <nav>
+				<ul>
+				  <li><a href="registered_user_home.html">Home</a></li>
+				  <li><a href="registered_classes.html">Classes</a></li>
+				  <li><a href="registered_equipment_rental.html">Equipment Rental</a></li>
+				  <li><a href="registered_catering_service.html">Catering</a></li>
+				  <li><a href="registered_elderly_care.html">Elderly Care</a></li>
+				  <li><a href="home.html">Log Out</a></li>
+                </ul>
+			  </nav>
+			</div>
+		  </header>
+
+		  <main>
+            <div id='equipment_rental'>
+                <h1>Equipment Rental</h1>
+                <h2>Enter quantity for equipment to reserve.</h2>
+                <form id="equipment_form" method="GET" action="registered_payment.html">
+                    <table border="1" cellspacing="0" align="center">
+                        <tr>
+                            <td id='edge_title' align="center" height="50" 
+                                width="100"><br>
+                                <b>Equipment</b></br>
+                            </td>
+                            <td id='edge_title' align="center" height="50" 
+                                width="100">
+                                <b>Cost/Unit</b>
+                            </td>
+                            <td id='edge_title' align="center" height="50" 
+                                width="100">
+                                <b>Select Quantity</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Chair</b></td>
+                            <td align="center" height="50">$1</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="text" name="chair_quantity" id="chair_quantity">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Table</b>
+                            </td>
+                            <td align="center" height="50">$5</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="text" name="table_quantity" id="table_quantity">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Podium</b>
+                            </td>
+                            <td align="center" height="50">$10</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="text" name="podium_quantity" id="podium_quantity">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Microphone</b>
+                            </td>
+                            <td align="center" height="50">$5</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="text" name="mic_quantity" id="mic_quantity">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Popcorn Machine</b>
+                            </td>
+                            <td align="center" height="50">$25</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="text" name="popcorn_quantity" id="popcorn_quantity">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Dance Floor</b>
+                            </td>
+                            <td align="center" height="50">$50</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="text" name="dance_quantity" id="dance_quantity">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">Total</td>
+                            <td align="center" height="50" colspan="2">
+                                <input type="hidden" name="total_block" id="total_block" value="">
+                                <p id='total_block_show'></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="button_wrapper">
+                        <input type="submit" id="pay_button" value="Checkout">
+                    </div>
+                </form>
+            </div>
+		  </main>
+
+		  <footer>
+			<p>BEST COMMUNITY SERVICE <br>Nathan Nguyen</p>
+		  </footer>
+	</body>
+</html>

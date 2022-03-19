@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Best Community Service</title>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet">		
+		<meta name="author" content="Nathan Nguyen">
+		<script type="text/javascript" src="catering_service_script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+			  <h1 id="left_title">COMMUNITY SERVICE | REGISTERED USER</h1>
+			  <nav>
+				<ul>
+				  <li><a href="registered_user_home.html">Home</a></li>
+				  <li><a href="registered_classes.html">Classes</a></li>
+				  <li><a href="registered_equipment_rental.html">Equipment Rental</a></li>
+				  <li><a href="registered_catering_service.html">Catering</a></li>
+				  <li><a href="registered_elderly_care.html">Elderly Care</a></li>
+				  <li><a href="home.html">Log Out</a></li>
+                </ul>
+			  </nav>
+			</div>
+		  </header>
+
+		  <main>
+            <div id='catering_service'>
+                <h1>Catering Service</h1>
+                <h2>Select a catering service to reserve.</h2>
+                <form id="catering_form" method="GET" action="registered_payment.html">
+                    <table border="1" cellspacing="0" align="center">
+                        <tr>
+                            <td id='edge_title' align="center" height="50" 
+                                width="200"><br>
+                                <b>Type of Catering</b></br>
+                            </td>
+                            <td id='edge_title' align="center" height="50" 
+                                width="200">
+                                <b>Cost/Person</b>
+                            </td>
+                            <td id='edge_title' align="center" height="50" 
+                                width="200">
+                                <b>Select Service</b>
+							</td>
+								<td id='edge_title' align="center" height="50" 
+								width="200">
+								<b>Number of People?</b>
+							</td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Breakfast</b></td>
+                            <td align="center" height="50">$8</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="radio" name="service_select" id="breakfast_select">
+                            </td>
+							<td align="center" height="50" rowspan="6">
+								<input type="text" name="people_quantity" id="people_quantity">
+							</td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Lunch</b>
+                            </td>
+                            <td align="center" height="50">$10</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="radio" name="service_select" id="lunch_select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Dinner</b>
+                            </td>
+                            <td align="center" height="50">$12</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="radio" name="service_select" id="dinner_select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Mexican</b>
+                            </td>
+                            <td align="center" height="50">$15</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="radio" name="service_select" id="mexican_select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Italian</b>
+                            </td>
+                            <td align="center" height="50">$15</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="radio" name="service_select" id="italian_select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">
+                                <b>Chinese</b>
+                            </td>
+                            <td align="center" height="50">$15</td>
+                            <td class='quantity_block' align="center" height="50">
+                                <input type="radio" name="service_select" id="chinese_select">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" height="50">Total</td>
+                            <td align="center" height="50" colspan="3">
+                                <input type="hidden" name="total_block" id="total_block" value="">
+                                <p id='total_block_show'></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="button_wrapper">
+                        <input type="submit" id="pay_button" value="Checkout">
+                    </div>
+                </form>
+            </div>
+		  </main>
+
+	</body>
+</html>

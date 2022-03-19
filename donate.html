@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Best Community Service</title>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet">		
+		<meta name="author" content="Nathan Nguyen">
+    <script type="text/javascript" src="donate_script.js" defer></script>
+	</head>
+	<body>
+		<header>
+		    <div class="container">
+			  <h1 id="left_title">BEST COMMUNITY SERVICE | DONATE</h1>
+			  <nav>
+				<ul>
+				  <li><a href="home.html">Home</a></li>
+				  <li><a href="donate.html">Donate</a></li>
+				  <li><a href="sign_up.html">Sign Up</a></li>
+				  <li><a href="sign_in.html">Sign In</a></li>
+				  <li><a href="employee_sign_in.html">Employee Sign in</a></li>
+				</ul>
+			  </nav>
+			</div>
+		</header>
+
+		<main>
+            <div id="donate_wrapper">
+                <form id="donate">
+                    <h2>Anonymous Donation</h2>
+                    <label>Amount to Donate</label>
+                    <input type="text" name="myAmount" id="myAmount" required>
+
+                    <label for="myCreditCard">Credit Card Number</label>
+                    <input type="text" name="myCreditCard" id="myCreditCard" required>
+        
+                    <label for="myExpDateMonth">Expiration Date </label>
+                    <select size="1" name="myExpDateMonth" id="myExpDateMonth" required>
+                        <option value="1">January</option>
+                        <option value='2'>February</option>
+                        <option value='3'>March</option>
+                        <option value='4'>April</option>
+                        <option value='5'>May</option>
+                        <option value='6'>June</option>
+                        <option value='7'>July</option>
+                        <option value='8'>August</option>
+                        <option value='9'>September</option>
+                        <option value='10'>October</option>
+                        <option value='11'>November</option>
+                        <option value='12'>December</option>
+                    </select>
+                    <input type="text" name="myExpDateDay" id="myExpDateDay" required>
+        
+                    <label for="mySecurityCode">Security Code</label>
+                    <input type="text" name="mySecurityCode" id="mySecurityCode" required>
+        
+                    <section id="myButtons">
+                        <input type="button" id="mySubmit" value="Donate">
+                    </section>
+                </form>     
+            </div>
+		</main>
+
+		<footer>
+		    <p>BEST COMMUNITY SERVICE <br>Nathan Nguyen</p>
+        </footer>
+	</body>
+</html>

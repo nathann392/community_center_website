@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body {
+	margin: 0;
+	background: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+header {
+  background: #dbf3fa;
+}
+
+header h1 {
+    color: #444;
+    font-size: 14px;
+    float: left;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav a:active {
+    color: yellow;
+}
+  
+#home_title {
+	text-align: center;
+	padding-top: 40px;
+}
+
+#home_banner {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 700px;
+}
+
+#home_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+	padding-bottom: 50px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #dbf3fa;
+    color: #444;
+    text-align: left;
+    padding-left: 50px;
+}
+
+#donate_wrapper form {   
+    width: 350px;
+    height: 420px;
+    padding: 40px;
+    margin: 50px auto;
+    border: 3px solid ;    
+    display: block;
+    color: black;
+    background-color: white;
+}
+
+#donate_wrapper h2 {
+    font-size: 30px;
+}
+
+#donate_wrapper label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#donate_wrapper input {
+    display: block;
+    width: 335px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 25px;
+    font-size: 14px;
+    border: 1px solid #aeaeae;
+}
+
+#donate_wrapper select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 24px;
+    border: 1px solid #aeaeae;
+}
+
+#donate_wrapper #myExpDateMonth {
+    display: inline;
+    width: 90px;
+}
+#donate_wrapper #myExpDateDay {
+    display: inline;
+    width: 90px;
+}
+
+#donate_wrapper #myButtons {
+    width: 344px;
+    margin-top: 12px;
+}
+
+#signup_wrapper form {   
+    width: 350px;
+    height: 420px;
+    padding: 40px;
+    margin: 50px auto;
+    border: 3px solid ;    
+    display: block;
+    color: black;
+    background-color: white;
+}
+
+#signup_wrapper h2 {
+    font-size: 30px;
+}
+
+#signup_wrapper label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#signup_wrapper input {
+    display: block;
+    width: 335px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 25px;
+    font-size: 14px;
+    border: 1px solid #aeaeae;
+}
+
+#signup_wrapper select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 24px;
+    border: 1px solid #aeaeae;
+}
+
+#signin_wrapper form {   
+    width: 350px;
+    height: 300px;
+    padding: 40px;
+    margin: 50px auto;
+    border: 3px solid ;    
+    display: block;
+    color: black;
+    background-color: white;
+}
+
+#signin_wrapper h2 {
+    font-size: 30px;
+}
+
+#signin_wrapper label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#signin_wrapper input {
+    display: block;
+    width: 335px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 25px;
+    font-size: 14px;
+    border: 1px solid #aeaeae;
+}
+
+#signin_wrapper select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 24px;
+    border: 1px solid #aeaeae;
+}
+
+#mySubmit {
+    width: 100px;
+    height: 30px;
+    display: inline;     
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    float: left;
+    font-weight: bold;
+}
+
+#class_schedule {
+    margin-top: 50px;
+}
+
+#class_schedule table {
+    background-color: white;
+}
+
+#class_schedule h1 {
+    text-align: center;
+    color: white;
+}
+
+#class_schedule h2 {
+    text-align: center;
+    color: white;
+}
+
+#class_schedule #edge_title {
+    background-color: #55d6aa;
+}
+
+#class_schedule #button_wrapper {
+    text-align: center;
+}
+
+#class_schedule #pay_button {
+    text-align: center;
+    width: 90px;
+    height: 25px;
+    margin-top: 30px;
+    background-color: white;
+    font-weight: bold;
+}
+
+#equipment_rental {
+    margin-top: 50px;
+}
+
+#equipment_rental table {
+    background-color: white;
+}
+
+#equipment_rental h1 {
+    text-align: center;
+    color: white;
+}
+
+#equipment_rental h2 {
+    text-align: center;
+    color: white;
+}
+
+#equipment_rental #edge_title {
+    background-color: #55d6aa;
+}
+
+#equipment_rental input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    width: 30px;
+    text-align: center;
+}
+
+#equipment_rental input:focus {
+    outline: none;
+}
+
+#equipment_rental #button_wrapper {
+    text-align: center;
+}
+
+#equipment_rental #pay_button {
+    text-align: center;
+    width: 90px;
+    height: 25px;
+    margin-top: 30px;
+    background-color: white;
+    font-weight: bold;
+}
+
+#equipment_rental #pay_button:hover {
+    background-color: lightgrey;
+}
+
+#payment_wrapper form {   
+    width: 350px;
+    height: 630px;
+    padding: 40px;
+    padding-top: 20px;
+    margin: 50px auto;
+    border: 3px solid ;    
+    display: block;
+    color: black;
+    background-color: white;
+}
+
+#payment_wrapper h2 {
+    font-size: 30px;
+}
+
+#payment_wrapper h3 {
+    margin-bottom: 25px;    
+}
+
+#payment_wrapper label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#payment_wrapper input {
+    display: block;
+    width: 335px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 25px;
+    font-size: 14px;
+    border: 1px solid #aeaeae;
+}
+
+#payment_wrapper select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 24px;
+    border: 1px solid #aeaeae;
+}
+
+#payment_wrapper #myExpDateMonth {
+    display: inline;
+    width: 90px;
+}
+#payment_wrapper #myExpDateDay {
+    display: inline;
+    width: 90px;
+}
+
+#payment_wrapper #myButtons {
+    padding-top: 20px;
+}
+
+#catering_service {
+    margin-top: 50px;
+}
+
+#catering_service table {
+    background-color: white;
+}
+
+#catering_service h1 {
+    text-align: center;
+    color: black;
+}
+
+#catering_service h2 {
+    text-align: center;
+    color: black;
+}
+
+#catering_service #edge_title {
+    background-color: #dbf3fa;
+}
+
+#catering_service input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    width: 30px;
+    text-align: center;
+}
+
+#catering_service input:focus {
+    outline: none;
+}
+
+#catering_service #button_wrapper {
+    text-align: center;
+}
+
+#catering_service #pay_button {
+    text-align: center;
+    width: 90px;
+    height: 25px;
+    margin-top: 30px;
+    background-color: white;
+    font-weight: bold;
+	border-top-style: groove;
+    border-right-style: groove;
+    border-left-style: groove;
+    border-bottom-style: groove;
+}
+
+#catering_service #pay_button:hover {
+    background-color: lightgrey;
+}
+
+
+
+
+#emp_class_schedule {
+    margin-top: 50px;
+    margin-left: 160px;
+    float:left;
+}
+
+#emp_class_schedule table {
+    background-color: white;
+}
+
+#emp_class_schedule h1 {
+    text-align: center;
+    color: white;
+}
+
+#emp_class_schedule h2 {
+    text-align: center;
+    color: white;
+}
+
+#emp_class_schedule td {
+    width: 150px;
+}
+
+#emp_class_schedule #edge_title {
+    background-color: #55d6aa;
+}
+
+#emp_class_schedule #button_wrapper {
+    text-align: center;
+}
+
+#emp_class_schedule #pay_button {
+    text-align: center;
+    width: 90px;
+    height: 25px;
+    margin-top: 30px;
+    background-color: white;
+    font-weight: bold;
+}
+
+#add_event_wrapper {
+    float: right;
+}
+
+#add_event_table {
+    border: 1;
+    background-color: white;
+    margin-top: 180px;
+    margin-right: 200px;
+    height: 375px;
+    width: 300px;
+    padding-bottom: 25px;
+}
+
+#add_event_table label {
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+}
+
+#add_event_table input {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
